@@ -1,0 +1,74 @@
+.navigationcontroller {
+  .content {
+    margin-top: 44px;
+  }
+
+  .toolbar {
+    @include header;
+    @include toolbar-gradient-background;
+    height: 44px;
+    @include box-shadow(0px 0px 10px #888888);
+    h1 {
+      padding: 0;
+      margin: 0;
+      color: #FFFFFF;
+      font-size: 1.6em;
+      background-color: #666666;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: rgba(255,255,255,1) 1px 1px 1px;
+    }
+    .text-right {
+      padding-top: 5px;
+      padding-right: 10px;
+      .em-ui-button {
+        float:right;
+      }
+    }
+    .text-left {
+      padding-top: 5px;
+      padding-left: 10px;
+    }
+
+  }
+}
+
+
+
+.tabbarcontroller {
+  .tabbar {
+    @include footer;
+    @include tabbar-gradient-background;
+    height: $tabbar-height;
+    display: table;
+  }
+  .tabitem {
+    @extend .text-center;
+    display: table-cell;
+    .icon {
+      position: relative;
+      font-family: 'Batch';
+      font-size: 22px;
+      top: 7px;
+      height: $tabbar-height - 12;
+    }
+    .title {
+      color: $tab-text-color;
+    }
+  }
+  .selected {
+    @include tabbar-selected-background;
+    .icon {
+      color: $tab-selected-icon-color;
+    }
+    .title {
+      color: $tab-selected-text-color;
+    }
+  }
+
+  .content {
+    padding-bottom: $tabbar-height;
+  }
+}

@@ -1,0 +1,41 @@
+!!!
+%html
+  %head
+    %title EmberJs
+    %link{:href => "/stylesheets/application.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "/app/application.js", :type => "text/javascript"}
+    
+
+    %meta{:name => "viewport", :content => "user-scalable=no, initial-scale=1.0"}
+
+    
+    %meta{:name => "apple-mobile-web-app-capable", :content => "yes"}
+    %meta{:name => "apple-mobile-web-app-status-bar-style", :content=> "black"}
+    
+    %link{:href => "app/ember-mobile/assets/iphone-lores-portrait.png", :media => "(device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)", :rel => "apple-touch-startup-image"}
+    %link{:href => "app/ember-mobile/assets/iphone-lores-landscape.png", :media => "(device-width: 320px) and (device-height: 480px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)", :rel => "apple-touch-startup-image"}
+    %link{:href => "app/ember-mobile/assets/icon-57.png", :rel => "apple-touch-icon", :sizes => "57x57"}
+    
+    / iPhone (Retina)
+    %link{:href => "app/ember-mobile/assets/icon-114.png", :rel => "apple-touch-icon", :sizes => "114x114"}
+    
+    %link{:href => "app/ember-mobile/assets/iphone-hires-portrait.png", :media => "(device-width: 320px) and (device-height: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)", :rel => "apple-touch-startup-image"}
+    %link{:href => "app/ember-mobile/assets/iphone-hires-landscape.png", :media => "(device-width: 320px) and (device-height: 480px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)", :rel => "apple-touch-startup-image"}
+
+    / iPhone 5
+    %link{:href => "app/ember-mobile/assets/iphone5-hires-portrait.png", :media => "(device-width: 320px) and (device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)", :rel => "apple-touch-startup-image"}
+    %link{:href => "app/ember-mobile/assets/iphone5-hires-landscape.png", :media => "(device-width: 320px) and (device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)", :rel => "apple-touch-startup-image"}
+    
+    / iPad
+    %link{:href => "app/ember-mobile/assets/icon-72.png", :rel => "apple-touch-icon", :sizes => "72x72"}
+    %link{:href => "app/ember-mobile/assets/ipad-lores-portrait.png", :media => "(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)", :rel => "apple-touch-startup-image"}
+    %link{:href => "app/ember-mobile/assets/ipad-lores-landscape.png", :media => "(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)", :rel => "apple-touch-startup-image"}
+    / iPad (Retina)
+    %link{:href => "app/ember-mobile/assets/icon-144.png", :rel => "apple-touch-icon", :sizes => "144x144"}
+    %link{:href => "app/ember-mobile/assets/ipad-hires-portrait.png", :media => "(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)", :rel => "apple-touch-startup-image"}
+    %link{:href => "app/ember-mobile/assets/ipad-hires-landscape.png", :media => "(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)", :rel => "apple-touch-startup-image"}
+
+
+
+  %body
+    = yield

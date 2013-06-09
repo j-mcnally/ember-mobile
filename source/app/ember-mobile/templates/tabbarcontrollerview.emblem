@@ -1,0 +1,4 @@
+div.tabbar.row-fluid
+  each item in view.content
+    EmberMobile.TabItemView contentBinding="item"
+=yield

@@ -1,0 +1,75 @@
+@mixin footer {
+  position:fixed;
+  bottom: 0px;
+}
+
+@mixin header {
+  position:fixed;
+  top: 0px;
+}
+@mixin toolbar-gradient-background {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top, $toolbar-gradient-start 0%, $toolbar-gradient-end 99%, $toolbar-gradient-line 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, $toolbar-gradient-start 0%, $toolbar-gradient-end 99%, $toolbar-gradient-line 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, $toolbar-gradient-start 0%, $toolbar-gradient-end 99%, $toolbar-gradient-line 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $toolbar-gradient-start), color-stop(.99, $toolbar-gradient-end), color-stop(1, $toolbar-gradient-line));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, $toolbar-gradient-start 0%, $toolbar-gradient-end 99%, $toolbar-gradient-line 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom, $toolbar-gradient-start 0%, $toolbar-gradient-end 99%, $toolbar-gradient-line 100%);
+}
+
+
+@mixin tabbar-gradient-background {
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top, $tabbar-gradient-line 0%, $tabbar-gradient-start 2%, $tabbar-gradient-end 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, $tabbar-gradient-line 0%, $tabbar-gradient-start 2%, $tabbar-gradient-end 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, $tabbar-gradient-line 0%, $tabbar-gradient-start 2%, $tabbar-gradient-end 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $tabbar-gradient-line), color-stop(0.02, $tabbar-gradient-start), color-stop(1, $tabbar-gradient-end));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, $tabbar-gradient-line 0%, $tabbar-gradient-start 2%, $tabbar-gradient-end 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom, $tabbar-gradient-line 0%, $tabbar-gradient-start 2%, $tabbar-gradient-end 100%);
+}
+
+@mixin tabbar-selected-background {
+
+  -moz-box-shadow:    inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow:         inset 0 0 10px #000000;
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-linear-gradient(top, $tabbar-gradient-end 0%, $tabbar-gradient-start 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-linear-gradient(top, $tabbar-gradient-end 0%, $tabbar-gradient-start 100%);
+
+  /* Opera */ 
+  background-image: -o-linear-gradient(top, $tabbar-gradient-end 0%, $tabbar-gradient-start 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $tabbar-gradient-end), color-stop(1, $tabbar-gradient-start));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-linear-gradient(top, $tabbar-gradient-end 0%, $tabbar-gradient-start 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: linear-gradient(to bottom, $tabbar-gradient-end 0%, $tabbar-gradient-start 100%);
+
+}

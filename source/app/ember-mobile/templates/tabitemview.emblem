@@ -1,0 +1,4 @@
+%div.icon
+  == view.content.icon
+%div.title
+  = view.content.title

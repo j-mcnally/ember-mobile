@@ -1,0 +1,4 @@
+App.TabBar
+  EmberMobile.NavigationControllerView
+    .content
+      =outlet
