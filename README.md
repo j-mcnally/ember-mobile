@@ -12,3 +12,6 @@ run `middleman build`
 run `middleman`
 
 connect to `localhost:4567`
+
+
+![image](http://i.imgur.com/0X2VtvZ.png)
