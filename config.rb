@@ -94,6 +94,7 @@ configure :build do
   ignore "#{js_dir}/routes"
   ignore "#{js_dir}/main"
   ignore "stylesheets/variables.css"
+  ignore "stylesheets/ember-mobile/*"
   ignore "stylesheets/ember-mobile.css"
 
   #tried to append the gem paths, didn't work, so copying on build for now.

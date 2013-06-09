@@ -7,7 +7,7 @@ gem 'ember-source', '1.0.0.rc5'
 gem 'handlebars-source', '1.0.0.rc4'
 gem 'ember-data-source'
 #gem "middleman-emblem", "~> 1.1.1"
-gem "middleman-emblem", :path => "/Users/justin/Projects/middleman-emblem"
+gem "middleman-emblem", '1.1.4'
 gem 'bootstrap-sass', '~> 2.3.1.0', :require => false
 gem 'middleman-emberscript', '~> 1.0.0'
 
