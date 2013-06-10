@@ -1,11 +1,11 @@
 div.toolbar.row-fluid
   %div.span3.text-left
-    EmberMobile.ToolbarBackButton
-      | Back
+    unless view.isRootView
+      EmberMobile.ToolbarBackButton
+        | Back
   %div.span6.text-center
-    %h1 Title
+    %h1
+      = view.navigationTitle
   %div.span3.text-right
-    EmberMobile.ToolbarButton
-      | Go
 
 =yield

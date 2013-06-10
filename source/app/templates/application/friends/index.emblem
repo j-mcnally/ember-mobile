@@ -1,0 +1,3 @@
+.content
+  linkTo "friends.new"
+    | New friend

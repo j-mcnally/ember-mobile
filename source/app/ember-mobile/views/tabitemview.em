@@ -5,7 +5,9 @@ class EmberMobile.TabItemView extends Ember.View
   classNames: ["tabitem"]
   classNameBindings: ["selected"]
   selected: (->
-    this.get('content') == this.get('parentView.selected')
+    resource = this.get('content.route').split(".")[0]
+    resource == this.get('parentView.selected')
   ).property('item', 'parentView.selected').cacheable()
   click: ->
-    this.get('parentView').set('selected', this.get('content'))
+    @_context.namespace.Router.router.transitionTo(@get('content.route') + ".index")
+    

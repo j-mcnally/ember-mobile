@@ -10,8 +10,8 @@
 window.A = window.App = Ember.Application.create
   rootElement : "#ember-application-root"
   LOG_TRANSITIONS: true
-
-
+  customEvents:
+    'routeChanged': "routeChanged"
 
 
 

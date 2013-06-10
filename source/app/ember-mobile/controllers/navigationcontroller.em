@@ -1,0 +1,1 @@
+class EmberMobile.NavigationController extends Ember.Controller

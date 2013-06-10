@@ -1,11 +1,23 @@
 App.Router.map ->
-  this.route('index', { path: '/'})
-      
+  @route 'index', { path: '/'}
+  @resource 'friends', { path: '/friends'}, ->
+    @route 'show'
+    @route 'new'
+  @resource 'favorites', { path: '/favorites'}, ->
+    @route 'show'
+    @route 'new'
+  @resource 'songs', { path: '/songs'}, ->
+    @route 'show'
+    @route 'new'
+  @resource 'pictures', { path: '/pictures'}, ->
+    @route 'show'
+    @route 'new'
+    
+# If using a tab controller you may want to redirect index to your first tab.  
 class App.IndexRoute extends Ember.Route
-  setupController: (controller, model) ->
-    #object =
-    #  param: value
-    #if your controller takes parameters to bootstrap itself you can set it up here
-    #controller.prepareData(object)
-  model: (params) ->
-    #return a model here
+  redirect: ->
+    @transitionTo('friends.index')
+
+IndexRoute extends Ember.Route
+
+
