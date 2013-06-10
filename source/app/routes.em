@@ -18,6 +18,3 @@ class App.IndexRoute extends Ember.Route
   redirect: ->
     @transitionTo('friends.index')
 
-IndexRoute extends Ember.Route
-
-
